@@ -418,6 +418,7 @@ public class QuranActivity extends QuranActionBarActivity
     public CharSequence getPageTitle(int position) {
       final int resId = mIsRtl ?
           ARABIC_TITLES[position] : TITLES[position];
+      CharSequence t = getString(resId);
       return getString(resId);
     }
   }

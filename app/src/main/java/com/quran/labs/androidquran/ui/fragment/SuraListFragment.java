@@ -1,5 +1,6 @@
 package com.quran.labs.androidquran.ui.fragment;
 
+import com.quran.labs.androidquran.FastScroller;
 import com.quran.labs.androidquran.R;
 import com.quran.labs.androidquran.data.Constants;
 import com.quran.labs.androidquran.data.QuranInfo;
@@ -44,10 +45,13 @@ public class SuraListFragment extends Fragment {
     mRecyclerView.setLayoutManager(new LinearLayoutManager(context));
     mRecyclerView.setItemAnimator(new DefaultItemAnimator());
 
+    FastScroller fastScroller = (FastScroller) view.findViewById(R.id.fast_scroller);
+
     final QuranListAdapter adapter =
         new QuranListAdapter(context, mRecyclerView, getSuraList(), true);
     mRecyclerView.setAdapter(adapter);
-    return view;
+      fastScroller.setRecyclerView(mRecyclerView);
+      return view;
   }
 
   @Override

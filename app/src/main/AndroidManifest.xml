@@ -134,5 +134,8 @@
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </service>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="55fa2ab8d40a12a53078be1047c4d7b395d44cdd" />
     </application>
 </manifest> 

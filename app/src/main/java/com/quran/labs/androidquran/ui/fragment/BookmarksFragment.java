@@ -56,7 +56,7 @@ public class BookmarksFragment extends Fragment implements QuranListAdapter.Qura
   @Override
   public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
       @Nullable Bundle savedInstanceState) {
-    View view = inflater.inflate(R.layout.quran_list, container, false);
+    View view = inflater.inflate(R.layout.bookmark_list, container, false);
 
     final Context context = getActivity();
 

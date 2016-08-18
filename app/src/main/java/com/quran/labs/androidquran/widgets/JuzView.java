@@ -95,11 +95,11 @@ public class JuzView extends Drawable {
   public void draw(Canvas canvas) {
     canvas.drawCircle(mRadius, mCircleY, mRadius, mCircleBackgroundPaint);
     canvas.drawArc(mCircleRect, -90,
-        (int) (3.6 * mPercentage), true, mCirclePaint);
-    if (mOverlayTextPaint != null) {
-      canvas.drawText(mOverlayText, mCircleRect.centerX(),
-          mCircleRect.centerY() + mTextOffset, mOverlayTextPaint);
-    }
+            (int) (3.6 * mPercentage), true, mCirclePaint);
+      if (mOverlayTextPaint != null) {
+          canvas.drawText(mOverlayText, mCircleRect.centerX(),
+                  mCircleRect.centerY() + mTextOffset, mOverlayTextPaint);
+      }
   }
 
   @Override

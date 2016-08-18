@@ -109,6 +109,9 @@ public class AyahPlaybackFragment extends AyahActionFragment {
     }
   };
 
+    //1- get suraAyah start and end range
+    //2- get page number, verse repeat, range repeat and force range
+
   private void apply() {
     final Context context = getActivity();
     if (context instanceof PagerActivity) {

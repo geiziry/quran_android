@@ -21,4 +21,12 @@
     </declare-styleable>
 
     <attr name="spinnerItemStyle" format="reference" />
+
+    <declare-styleable name="fastscroll_fastscroller">
+        <attr name="fastscroll_bubbleColor" format="color" />
+        <attr name="fastscroll_handleColor" format="color" />
+        <attr name="fasscroll_bubbleTextAppearance" format="reference" />
+    </declare-styleable>
+    <attr name="fastscroll_style" format="reference"/>
+
 </resources>

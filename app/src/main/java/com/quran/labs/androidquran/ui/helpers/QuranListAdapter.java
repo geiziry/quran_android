@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.quran.labs.androidquran.R;
+import com.quran.labs.androidquran.SectionTitleProvider;
 import com.quran.labs.androidquran.dao.Bookmark;
 import com.quran.labs.androidquran.dao.Tag;
 import com.quran.labs.androidquran.ui.QuranActivity;
@@ -24,7 +25,7 @@ import java.util.Map;
 
 public class QuranListAdapter extends
     RecyclerView.Adapter<QuranListAdapter.HeaderHolder>
-    implements View.OnClickListener, View.OnLongClickListener {
+    implements View.OnClickListener, View.OnLongClickListener, SectionTitleProvider {
 
   private Context mContext;
   private LayoutInflater mInflater;
@@ -223,6 +224,18 @@ public class QuranListAdapter extends
       }
     }
     return false;
+  }
+
+  @Override
+  public String getSectionTitle(int position) {
+    for (int i = position; i >=0 ; i--) {
+      if (getQuranRow(i).isHeader()) {
+        String s = getQuranRow(i).text;
+        return s.substring(5,s.length());
+      }
+    }
+    return null;
+
   }
 
   class HeaderHolder extends RecyclerView.ViewHolder {

@@ -20,6 +20,11 @@
     <dimen name="juz_overlay_text_size">12sp</dimen>
     <dimen name="page_margin_small">7dp</dimen>
     <dimen name="page_margin_large">11dp</dimen>
+    <dimen name="fastscroll_handle_inset">9dp</dimen>
+    <dimen name="fastscroll_handle_corner">3dp</dimen>
+    <dimen name="fastscroll_handle_clickable_width">24dp</dimen>
+    <dimen name="fastscroll_handle_height">30dp</dimen>
+    <dimen name="fastscroll_bubble_corner">40dp</dimen>
 
     <!-- repeat -->
     <dimen name="repeat_superscript_text_size">10sp</dimen>

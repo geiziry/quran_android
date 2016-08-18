@@ -10,13 +10,6 @@
 		android:divider="@null"
 		android:dividerHeight="0dp"
 		android:fastScrollEnabled="true"/>
-	<com.quran.labs.androidquran.FastScroller
-		android:orientation="vertical"
-		android:id="@+id/fast_scroller"
-		android:layout_width="wrap_content"
-		android:layout_height="match_parent"
-		android:layout_alignParentRight="true"
-		android:layout_alignParentEnd="true"/>
 	<TextView android:id="@+id/empty_list"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
