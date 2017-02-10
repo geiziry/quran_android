@@ -12,6 +12,7 @@ import com.quran.labs.androidquran.widgets.JuzView;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Build;
@@ -67,6 +68,7 @@ public class JuzListFragment extends Fragment {
       int juz = QuranInfo.getJuzFromPage(lastPage);
       int position = (juz - 1) * 9;
       mRecyclerView.scrollToPosition(position);
+
     }
 
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB &&
